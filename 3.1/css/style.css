@@ -3,6 +3,7 @@ body {
 }
 
 div.carousel-inner {
+    
     display: block;
     width: 60%;
     margin-left: auto;
@@ -15,7 +16,7 @@ nav {
 
 div.accordion-item{
     background-color:#efe3d9;
-    
+    border: #3C8288 solid 2px;
 }
 
 div.col-6{
