@@ -1,0 +1,83 @@
+body {
+    background-color:#ebd2ba;
+}
+
+#navbarNavAltMarkup a:hover{
+    color: white;
+}
+
+div.carousel-inner {
+    
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+nav {
+    background-color:#3C8288;
+}
+
+div.accordion-item{
+    background-color:#efe3d9;
+    border: #3C8288 solid 2px;
+}
+
+div.col-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/*  */
+div.col-6 + #punainen {
+    background-color:  rgb(225, 121, 121);
+}
+
+div>img {
+    border-radius: 5px;
+}
+div.col>img{
+    border-radius: 15px;
+    height: 70vh;
+    padding: 10px;
+}
+
+/* antaa taustavärin elementin ensimmäiselle lapselle */
+li:first-child {
+    background: aquamarine;
+}
+
+/* antaa tasutavärin elementin viimeieselle lapselle */
+li:last-child {
+    background: burlywood;
+}
+
+/* Lihavoi lista elementin joka toisen lapsen */
+li:nth-child(2n) {
+    font-weight: bold;
+}
+
+/* lisää sanat lorem ipsum punaisella taustalla elementin luokan before loppuun */
+div#before::after {
+    content: 'lorem ipsum';
+    background: red;
+} 
+
+/* antaa luokka eka, ja ensimmäisen li elemetin seuraaville li elementeille mustat reunat (next sibling element) */
+li.eka ~ li {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+/* muuttaa kaikkien linkkien tekstinvärin punaiseksi ja lihavoiduksi */
+a[href] {
+    color: red;
+    font-weight: bold;
+}
+
+/* muuttaa classin eka tekstin kirjaimet isoiksi */
+[class*='eka'] {
+    text-transform: uppercase;
+}
