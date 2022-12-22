@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pieni blogi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- <form action="index.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="note">Note:</label>
+            <input type="text" id="note" name="note"><br><br>
+            <input type="checkbox" id="check"><b>Important!</b>
+            <br>
+            <button type="submit" value="Submit">Add note</button>
+        </form> -->
+    <div class="form">
+        <h1>Notes</h1>
+        <div class="card">
+            <div class="card-body">
+                <h3>Name:</h3>
+                <div>
+                    <input type="text" id="name">
+                <h3>Note:</h3>
+                <div class="form-group">
+                    <textarea class="form-control" 
+                        id="note" rows="5">
+                    </textarea>
+                </div>
+                <button id="submit">
+                    Add note
+                </button>
+                <input type="checkbox" name="important" id="check"><b>Important</b>
+            </div>
+        </div>
+        <hr>
+            <div id="notes" class=
+                "row container-fluid"> 
+            </div>
+        </div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
